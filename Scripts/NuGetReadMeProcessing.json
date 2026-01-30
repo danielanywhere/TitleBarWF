@@ -1,0 +1,20 @@
+[
+	{
+		"Remarks": "Replace file insertion variable with directly included content. (2 parameters)",
+		"FindPattern": "(?i:\\{\\s*(?<block>Include)\\s*,\\s*(?<filename>[^\\}]+)\\s*\\})",
+		"ReplacePattern": "LoadFileContent(${filename})",
+		"UseRegEx": 1
+	},
+	{
+		"Remarks": "Set the marked content to italic.",
+		"FindPattern": "(?s:(?i:(?<prespace>( |\\t)*)\\{italic\\}(?<lineContent>.*?)( |\\t)*\\{/italic\\}))",
+		"ReplacePattern": "${prespace}*${lineContent}*",
+		"UseRegEx": 1
+	},
+	{
+		"Remarks": "Replace all instances of <p>&nbsp;</p> with <br /><br />.",
+		"FindPattern": "(?<find>\\<p\\>\\&nbsp;\\</p\\>)",
+		"ReplacePattern": "---",
+		"UseRegEx": 1
+	}
+]

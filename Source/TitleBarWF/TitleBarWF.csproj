@@ -7,7 +7,35 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <RootNamespace>TitleBarWF</RootNamespace>
     <Platforms>AnyCPU;x64</Platforms>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <UserSecretsId>b7cecd55-4d9b-419d-b91e-9c0fd5eb5dfa</UserSecretsId>
+    <Version>26.2130.4508</Version>
+    <PackageId>Dans.TitleBarWF.Library</PackageId>
+    <Title>Dan's Custom WinForms TitleBar Library</Title>
+    <Description>Dan's Custom WinForms TitleBar Library for .NET Core</Description>
+    <Copyright>Copyright(c) 2026. Daniel Patterson, MCSD (danielanywhere)</Copyright>
+    <PackageProjectUrl>https://github.com/danielanywhere/TitleBarWF</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>custom;form;titlebar;winforms</PackageTags>
+    <Authors>Daniel Patterson, MCSD (danielanywhere)</Authors>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\NuGet\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;IDE0003;IDE0038;IDE0059</NoWarn>

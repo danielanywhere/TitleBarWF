@@ -8,4 +8,5 @@ SET TARGET=..\README.md
 
 :: When the image has a URL assigned it isn't placed in the output. Use 'Image' or 'Banner' blocks.
 PANDOC -t markdown_strict --embed-resources=false --wrap=none "%SOURCE%" -o "%TARGET%"
-"%FAR%" /wait "/workingpath:..\Docs" "/files:%TARGET%" "/patternfile:..\Scripts\ReadmePostProcessing.json"
+"%FAR%" "/workingpath:..\Docs" "/files:%TARGET%" "/patternfile:..\Scripts\ReadmePostProcessing.json"
+"%FAR%" /wait /workingpath:../ "/infile:Docs\NuGetUpdates.md" "/outfile:Source\NuGet\README.md" "/patternfile:Scripts\NuGetReadMeProcessing.json"

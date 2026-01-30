@@ -4,7 +4,7 @@ This small library is a fully customizable WinForms title bar control designed f
 
 This library is ideal for modern, themed, or branded WinForms applications where the default system title bar is far too limiting.
 
-<p>&nbsp;</p>
+---
 
 ## Why TitleBarWF?
 
@@ -26,13 +26,13 @@ However, once you do that, you lose all of the following capabilities.
 
 TitleBarWF solves these problems by giving you a drop‑in control that restores all the expected window behaviors while letting you customize the entire UI including the title bar.
 
-<p>&nbsp;</p>
+---
 
 ## Key Features
 
 The following are some of the most noticeable traits of this control.
 
-<p>&nbsp;</p>
+---
 
 ### Customizable UI
 
@@ -41,7 +41,7 @@ The following are some of the most noticeable traits of this control.
 -   Add additional controls (search boxes, menus, custom buttons, etc.).
 -   Use the entire title bar area as a layout surface.
 
-<p>&nbsp;</p>
+---
 
 ### Full Window Control
 
@@ -50,7 +50,7 @@ The following are some of the most noticeable traits of this control.
 -   Minimize, maximize, restore, and close buttons included.
 -   Optional hit‑testing support for resizing (if you choose to implement it).
 
-<p>&nbsp;</p>
+---
 
 ### Developer-Friendly
 
@@ -59,13 +59,13 @@ The following are some of the most noticeable traits of this control.
 -   No external dependencies.
 -   Behaves like a standard control. Just drop it on your form and go.
 
-<p>&nbsp;</p>
+---
 
 ## Getting Started
 
 Follow these steps to get started with TitleBarWF.
 
-<p>&nbsp;</p>
+---
 
 ### 1. Install
 
@@ -78,7 +78,7 @@ git clone https://github.com/danielanywhere/TitleBarWF.git
 
 ```
 
-<p>&nbsp;</p>
+---
 
 ### 2. Configure Your Form
 
@@ -89,7 +89,7 @@ this.FormBorderStyle = FormBorderStyle.None;
 
 ```
 
-<p>&nbsp;</p>
+---
 
 ### 3. Add the Control
 
@@ -102,7 +102,7 @@ this.Controls.Add(titleBar);
 
 ```
 
-<p>&nbsp;</p>
+---
 
 ### 4. Customize (Optional)
 
@@ -121,7 +121,7 @@ titleBar.Controls.Add(new Button { Text = "Help" });
 
 ```
 
-<p>&nbsp;</p>
+---
 
 ## How It Works
 
@@ -135,7 +135,7 @@ TitleBarWF handles all of the following.
 
 You can override or extend any of these behaviors.
 
-<p>&nbsp;</p>
+---
 
 ## License
 
@@ -143,7 +143,7 @@ This project is licensed under the **AGPL‑3.0** license.
 
 See the \`LICENSE\` file for details.
 
-<p>&nbsp;</p>
+---
 
 ## Contributing
 
@@ -151,7 +151,7 @@ Contributions are welcome!
 
 Feel free to open issues, submit pull requests, or suggest enhancements.
 
-<p>&nbsp;</p>
+---
 
 ## Future Enhancements
 
@@ -164,3 +164,19 @@ Potential improvements might include any of the following.
 -   Optional system menu support.
 
 If any of these interest you, join the discussion in the Issues section.
+
+
+## Updates
+
+| Version | Description |
+|---------|-------------|
+| 26.2130.4508 | Initial publication to NuGet. |
+
+
+## More Information
+
+For more information, please see the GitHub project:
+[danielanywhere/TitleBarWF](https://github.com/danielanywhere/TitleBarWF)
+
+Full API documentation is available at this library's [GitHub User Page](https://danielanywhere.github.io/TitleBarWF).
+
