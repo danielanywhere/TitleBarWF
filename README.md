@@ -137,6 +137,12 @@ You can override or extend any of these behaviors.
 
 <p>&nbsp;</p>
 
+## Example
+
+For an example of TitleBarWF in action, please see the GitHub repository [danielanywhere/CaptionAll](https://github.com/danielanywhere/CaptionAll).
+
+<p>&nbsp;</p>
+
 ## License
 
 This project is licensed under the **AGPL‑3.0** license.
